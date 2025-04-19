@@ -1,10 +1,8 @@
-
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  color: white;
 }
 
 .background {
@@ -12,25 +10,24 @@ body, html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
   width: 100%;
-  height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .topo {
   position: absolute;
   top: 20px;
-  left: 30px;
   right: 30px;
   display: flex;
   justify-content: space-between;
+  width: calc(100% - 60px);
   align-items: center;
   z-index: 10;
 }
 
 .logo {
-  height: 65px;
+  height: 50px;
 }
 
 .botoes {
@@ -63,94 +60,131 @@ body, html {
   background-color: #16a34a;
 }
 
-.banner-central {
+.icones-flutuantes {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 80px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
 }
 
-.banner-img {
+.icones-flutuantes img {
+  width: 36px;
   height: auto;
-  max-width: 80vw;
-  max-height: 70vh;
+  cursor: pointer;
+}
+
+.icones-flutuantes img:last-child {
+  margin-top: auto;
+  position: absolute;
+  bottom: 20px;
 }
 
 .modal {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 50;
 }
 
 .modal-content {
-  background-color: #1e293b;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  width: 300px;
-  position: relative;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
 }
 
 .modal-content input {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  background-color: #0f172a;
-  color: white;
-}
-
-.mensagem {
-  margin-top: 10px;
-  color: #22c55e;
-  font-weight: bold;
+  padding: 8px 10px;
+  font-size: 14px;
 }
 
 .btn-voltar {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  align-self: flex-start;
+  font-size: 14px;
+  margin-bottom: 10px;
   background: transparent;
-  border: 1px solid #22c55e;
-  color: #22c55e;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 6px;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mensagem {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.sorteio-card {
+  max-width: 800px;
+  margin: 140px auto 40px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 3px solid #00ff00;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+}
+
+.sorteio-titulo {
+  font-size: 28px;
+  color: #00ff00;
+  margin-bottom: 10px;
+}
+
+.sorteio-infos {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.sorteio-detalhes,
+.sorteio-premios,
+.sorteio-premio-final {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.sorteio-premios p {
+  margin: 5px 0;
+}
+
+.sorteio-premio-final h2 {
+  margin: 5px 0;
+  color: #00ff00;
+}
+
+.sorteio-comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.btn-ajuste {
+  padding: 4px 10px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.icones-flutuantes {
-  position: absolute;
-  top: 100px;
-  bottom: 30px;
-  left: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.icones-flutuantes img {
-  width: 32px;
-  height: 32px;
-}
-
-.construcao {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 28px;
-  color: #22c55e;
-  font-weight: bold;
+.grande {
+  padding: 12px 24px;
+  font-size: 18px;
 }
