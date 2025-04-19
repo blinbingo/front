@@ -10,6 +10,10 @@ export default function Home() {
         </div>
       </header>
 
+      <main className="banner-central">
+        <img src="/assets/banner.png" alt="Banner" className="banner-img" />
+      </main>
+
       <div className="icones-flutuantes">
         <img src="/assets/icon-bingo.svg" alt="Bingo" />
         <img src="/assets/icon-carta.svg" alt="Cartas" />
