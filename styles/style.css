@@ -8,7 +8,7 @@ body, html {
 }
 
 .background {
-  background-image: url('/background.png');
+  background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body, html {
 }
 
 .logo {
-  height: 45px;
+  height: 65px; /* Aumentada */
 }
 
 .botoes {
@@ -83,10 +83,14 @@ body, html {
   left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+}
+
+.icones-flutuantes img {
+  width: 32px;
+  height: 32px;
 }
 
 .icones-flutuantes .contato {
-  margin-top: 80px;
-  width: 28px;
+  margin-top: 100px; /* abaixado */
 }
