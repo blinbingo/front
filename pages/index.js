@@ -10,15 +10,6 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="conteudo-central">
-        <div className="banner-texto">
-          <h1>
-            JOGOS <span className="verde">EMOCIONANTES</span> E <br />
-            PRÊMIOS <span className="verde">INCRÍVEIS</span> SEM <br />
-            SAIR DE CASA!
-          </h1>
-          <p>Sua sorte está apenas a um clique de distância!</p>
-        </div>
         <div className="banner-imagem">
           <img src="/assets/banner.png" alt="Banner" />
         </div>
