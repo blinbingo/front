@@ -15,7 +15,7 @@ body, html {
   width: 100%;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .topo {
@@ -63,86 +63,72 @@ body, html {
   background-color: #16a34a;
 }
 
-.banner-central {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.btn-verde.grande {
+  font-size: 20px;
+  padding: 12px 24px;
 }
 
-.banner-img {
-  height: auto;
-  max-width: 80vw;
-  max-height: 70vh;
-}
-
-/* Modal */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-}
-
-.modal-content {
-  background-color: #1e293b;
+.sorteio-card {
+  max-width: 700px;
+  margin: 140px auto 40px;
   padding: 30px;
-  border-radius: 10px;
+  border: 3px solid #22c55e;
+  border-radius: 25px;
   text-align: center;
-  width: 300px;
-  position: relative;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.modal-content input {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  background-color: #0f172a;
-  color: white;
-}
-
-.mensagem {
-  margin-top: 10px;
+.sorteio-titulo {
+  font-size: 28px;
   color: #22c55e;
+  margin-bottom: 20px;
+}
+
+.sorteio-infos {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
   font-weight: bold;
 }
 
-.btn-voltar {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: 1px solid #22c55e;
+.sorteio-detalhes,
+.sorteio-premios,
+.sorteio-premio-final {
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+.sorteio-premio-final h2 {
   color: #22c55e;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.sorteio-comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-ajuste {
+  background-color: transparent;
+  color: #22c55e;
+  border: 2px solid #22c55e;
+  font-size: 22px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
 }
 
-/* Ícones flutuantes */
-.icones-flutuantes {
-  position: absolute;
-  top: 100px;
-  bottom: 30px;
-  left: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+.cartelas-qtd {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.icones-flutuantes img {
-  width: 32px;
-  height: 32px;
+.total-valor {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
 }
