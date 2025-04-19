@@ -63,45 +63,41 @@ body, html {
   background-color: #16a34a;
 }
 
-.banner-central {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.banner-img {
-  height: auto;
-  max-width: 80vw;
-  max-height: 70vh;
-}
-
-.icones-flutuantes {
-  position: absolute;
-  top: 100px;
-  bottom: 30px;
-  left: 30px;
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 100;
 }
 
-.icones-flutuantes img {
-  width: 32px;
-  height: 32px;
+.modal-content {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
 }
 
-/* ajuste fino de espaçamento */
-.icones-flutuantes img:nth-child(1) {
-  margin-top: 10px; /* desce o primeiro (bingo) */
+.modal-content input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0f172a;
+  color: white;
 }
 
-.icones-flutuantes img:nth-child(2) {
-  margin-top: -5px; /* cola o segundo (carta) ao bingo */
-}
-
-.icones-flutuantes img.contato {
-  margin-bottom: 0;
+.mensagem {
+  margin-top: 10px;
+  color: #22c55e;
+  font-weight: bold;
 }
