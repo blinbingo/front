@@ -30,7 +30,7 @@ body, html {
 }
 
 .logo {
-  height: 65px; /* Aumentada */
+  height: 65px;
 }
 
 .botoes {
@@ -80,10 +80,10 @@ body, html {
 .icones-flutuantes {
   position: absolute;
   top: 100px;
-  left: 20px;
+  left: 30px; /* alinhado com logo */
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
 .icones-flutuantes img {
@@ -92,5 +92,8 @@ body, html {
 }
 
 .icones-flutuantes .contato {
-  margin-top: 100px; /* abaixado */
+  margin-top: auto;
+  position: absolute;
+  bottom: 30px;
+  left: 30px; /* mesmo alinhamento */
 }
