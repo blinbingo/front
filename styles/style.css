@@ -63,35 +63,6 @@ body, html {
   background-color: #16a34a;
 }
 
-.conteudo-central {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  text-align: left;
-}
-
-.banner-texto h1 {
-  font-size: 2.2rem;
-  margin: 0 0 10px;
-}
-
-.banner-texto .verde {
-  color: #22c55e;
-}
-
-.banner-texto p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
-
-.banner-imagem img {
-  height: 250px;
-}
-
 .icones-flutuantes {
   position: absolute;
   top: 100px;
