@@ -7,7 +7,7 @@ body, html {
   color: white;
 }
 
-.background {
+.home-background {
   background-image: url('/background.png');
   background-size: cover;
   background-position: center;
@@ -15,7 +15,7 @@ body, html {
   width: 100%;
   height: 100vh;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .topo {
@@ -63,72 +63,85 @@ body, html {
   background-color: #16a34a;
 }
 
-.btn-verde.grande {
-  font-size: 20px;
-  padding: 12px 24px;
-}
-
-.sorteio-card {
-  max-width: 700px;
-  margin: 140px auto 40px;
-  padding: 30px;
-  border: 3px solid #22c55e;
-  border-radius: 25px;
+.banner-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
 }
 
-.sorteio-titulo {
-  font-size: 28px;
-  color: #22c55e;
-  margin-bottom: 20px;
+.banner-img {
+  height: auto;
+  max-width: 80vw;
+  max-height: 70vh;
 }
 
-.sorteio-infos {
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+}
+
+.modal-content input {
+  display: block;
+  width: 100%;
   margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0f172a;
+  color: white;
+}
+
+.mensagem {
+  margin-top: 10px;
+  color: #22c55e;
   font-weight: bold;
 }
 
-.sorteio-detalhes,
-.sorteio-premios,
-.sorteio-premio-final {
-  margin: 15px 0;
-  font-size: 13px;
-}
-
-.sorteio-premio-final h2 {
+.btn-voltar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: 1px solid #22c55e;
   color: #22c55e;
-  margin-top: 5px;
-}
-
-.sorteio-comprar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 25px;
-}
-
-.btn-ajuste {
-  background-color: transparent;
-  color: #22c55e;
-  border: 2px solid #22c55e;
-  font-size: 22px;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-.cartelas-qtd {
-  font-size: 20px;
-  font-weight: bold;
+.icones-flutuantes {
+  position: absolute;
+  top: 100px;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.total-valor {
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 10px;
+.icones-flutuantes img {
+  width: 32px;
+  height: 32px;
 }
