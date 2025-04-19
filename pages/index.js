@@ -24,10 +24,21 @@ export default function Home() {
         </div>
       </header>
 
+      <main className="banner-central">
+        <img src="/assets/banner.png" alt="Banner" className="banner-img" />
+      </main>
+
+      <div className="icones-flutuantes">
+        <img src="/assets/icon-bingo.svg" alt="Bingo" className="icon bingo" />
+        <img src="/assets/icon-carta.svg" alt="Cartas" className="icon carta" />
+        <img src="/assets/icon-contato.svg" alt="Contato" className="icon contato" />
+      </div>
+
       {/* Modal Cadastro */}
       {showCadastro && (
         <div className="modal">
           <div className="modal-content">
+            <button className="btn-voltar" onClick={() => setShowCadastro(false)}>Voltar</button>
             <h2>Cadastro</h2>
             <input type="text" placeholder="Apelido" />
             <input type="password" placeholder="Senha" />
@@ -41,6 +52,7 @@ export default function Home() {
       {showLogin && (
         <div className="modal">
           <div className="modal-content">
+            <button className="btn-voltar" onClick={() => setShowLogin(false)}>Voltar</button>
             <h2>Entrar</h2>
             <input type="text" placeholder="Apelido" />
             <input type="password" placeholder="Senha" />
