@@ -79,17 +79,29 @@ body, html {
 
 .icones-flutuantes {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 20px;
+  top: 100px;
+  bottom: 30px;
+  left: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 100px 0 30px;
+  justify-content: space-between;
 }
 
 .icones-flutuantes img {
   width: 32px;
   height: 32px;
+}
+
+/* ajuste fino de espaçamento */
+.icones-flutuantes img:nth-child(1) {
+  margin-top: 10px; /* desce o primeiro (bingo) */
+}
+
+.icones-flutuantes img:nth-child(2) {
+  margin-top: -5px; /* cola o segundo (carta) ao bingo */
+}
+
+.icones-flutuantes img.contato {
+  margin-bottom: 0;
 }
