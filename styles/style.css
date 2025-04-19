@@ -8,7 +8,7 @@ body, html {
 }
 
 .background {
-  background-image: url('/background.png');
+  background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,6 +61,20 @@ body, html {
 
 .btn-verde:hover {
   background-color: #16a34a;
+}
+
+.banner-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-img {
+  height: auto;
+  max-width: 80vw;
+  max-height: 70vh;
 }
 
 .icones-flutuantes {
