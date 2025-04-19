@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import Link from 'next/link';
 
 export default function Home() {
   const [showCadastro, setShowCadastro] = useState(false);
@@ -16,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <div className="background">
+    <div className="home-background">
       <header className="topo">
         <img src="/assets/logo.png" alt="Logo" className="logo" />
         <div className="botoes">
@@ -30,7 +29,7 @@ export default function Home() {
       </main>
 
       <div className="icones-flutuantes">
-        <Link href="/bingo"><img src="/assets/icon-bingo.svg" alt="Bingo" className="icon bingo" /></Link>
+        <img src="/assets/icon-bingo.svg" alt="Bingo" className="icon bingo" />
         <img src="/assets/icon-carta.svg" alt="Cartas" className="icon carta" />
         <img src="/assets/icon-contato.svg" alt="Contato" className="icon contato" />
       </div>
