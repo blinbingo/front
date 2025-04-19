@@ -10,11 +10,6 @@ export default function Home() {
         </div>
       </header>
 
-        <div className="banner-imagem">
-          <img src="/assets/banner.png" alt="Banner" />
-        </div>
-      </main>
-
       <div className="icones-flutuantes">
         <img src="/assets/icon-bingo.svg" alt="Bingo" />
         <img src="/assets/icon-carta.svg" alt="Cartas" />
