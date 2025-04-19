@@ -21,7 +21,7 @@ body, html {
 .topo {
   position: absolute;
   top: 20px;
-  left: 80px;
+  left: 30px;
   right: 30px;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@ body, html {
 }
 
 .logo {
-  height: 50px;
+  height: 45px;
 }
 
 .botoes {
@@ -63,49 +63,45 @@ body, html {
   background-color: #16a34a;
 }
 
-.menu-lateral {
+.conteudo-central {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 70px;
-  height: 100%;
-  background-color: #0f172a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: 60px;
   align-items: center;
-  padding: 20px 0;
+  text-align: left;
 }
 
-.menu-lateral img {
-  width: 28px;
-  height: 28px;
-  margin: 10px 0;
-  cursor: pointer;
+.banner-texto h1 {
+  font-size: 2.2rem;
+  margin: 0 0 10px;
 }
 
-.banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 100px 100px 0 150px;
-}
-
-.banner .texto h1 {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  margin-bottom: 20px;
-}
-
-.banner .texto .verde {
+.banner-texto .verde {
   color: #22c55e;
 }
 
-.banner .texto p {
+.banner-texto p {
   font-size: 1.1rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-.banner .imagem img {
-  height: 300px;
+.banner-imagem img {
+  height: 250px;
+}
+
+.icones-flutuantes {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icones-flutuantes .contato {
+  margin-top: 80px;
+  width: 28px;
 }
