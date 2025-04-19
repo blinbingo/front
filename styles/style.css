@@ -1,3 +1,21 @@
+/* Fundo */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background {
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Topo com botões */
 .topo {
   position: absolute;
   top: 20px;
@@ -33,6 +51,4 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-verde:hover {
-  background-color: #16a34a;
-}
+.btn-ver
