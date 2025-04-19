@@ -30,15 +30,15 @@ export default function Bingo() {
         <img src="/assets/icon-contato.svg" alt="Contato" />
       </div>
 
-      <div className="sorteio-card">
+      <main className="sorteio-card">
         <h1 className="sorteio-titulo">SORTEIO DAS 15:00</h1>
         <div className="sorteio-infos">
           <span>20/04/2025 15:00</span>
           <span>COMEÇA EM 01:15:43</span>
         </div>
-        <div className="sorteio-detalhes">
-          <p>CARTELAS 24 NÚMEROS · 100 CARTELAS DISPONÍVEIS · VALOR DA CARTELA R$10,00 · BOLAS DE 0 A 60</p>
-        </div>
+        <p className="sorteio-detalhes">
+          CARTELAS 24 NÚMEROS · 100 CARTELAS DISPONÍVEIS · VALOR DA CARTELA R$10,00 · BOLAS DE 0 A 60
+        </p>
         <div className="sorteio-premios">
           <p>3 ACERTOS - 5 REAIS TODOS OS GANHADORES</p>
           <p>6 ACERTOS - 10 REAIS TODOS OS GANHADORES</p>
@@ -59,7 +59,7 @@ export default function Bingo() {
           <span className="total-valor">R$40,00</span>
           <button className="btn-verde grande">COMPRAR</button>
         </div>
-      </div>
+      </main>
 
       {showCadastro && (
         <div className="modal">
