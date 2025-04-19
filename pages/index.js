@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [showCadastro, setShowCadastro] = useState(false);
@@ -15,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <div className="home-background">
+    <div className="background">
       <header className="topo">
         <img src="/assets/logo.png" alt="Logo" className="logo" />
         <div className="botoes">
@@ -29,12 +30,11 @@ export default function Home() {
       </main>
 
       <div className="icones-flutuantes">
-        <img src="/assets/icon-bingo.svg" alt="Bingo" className="icon bingo" />
-        <img src="/assets/icon-carta.svg" alt="Cartas" className="icon carta" />
-        <img src="/assets/icon-contato.svg" alt="Contato" className="icon contato" />
+        <Link href="/bingo"><img src="/assets/icon-bingo.svg" alt="Bingo" /></Link>
+        <img src="/assets/icon-carta.svg" alt="Cartas" />
+        <img src="/assets/icon-contato.svg" alt="Contato" />
       </div>
 
-      {/* Modal Cadastro */}
       {showCadastro && (
         <div className="modal">
           <div className="modal-content">
@@ -48,7 +48,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Modal Login */}
       {showLogin && (
         <div className="modal">
           <div className="modal-content">
