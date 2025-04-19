@@ -60,6 +60,11 @@ body, html {
   background-color: #16a34a;
 }
 
+.grande {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
 .icones-flutuantes {
   position: absolute;
   top: 80px;
@@ -182,9 +187,4 @@ body, html {
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.grande {
-  padding: 12px 24px;
-  font-size: 18px;
 }
