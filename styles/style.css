@@ -1,7 +1,9 @@
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
 }
 
@@ -19,15 +21,15 @@ body, html {
   position: absolute;
   top: 20px;
   right: 30px;
+  left: 30px;
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 60px);
   align-items: center;
   z-index: 10;
 }
 
 .logo {
-  height: 50px;
+  height: 55px;
 }
 
 .botoes {
@@ -60,81 +62,45 @@ body, html {
   background-color: #16a34a;
 }
 
-.grande {
-  padding: 12px 24px;
-  font-size: 18px;
+.banner-central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.banner-img {
+  max-width: 90vw;
+  height: auto;
 }
 
 .icones-flutuantes {
   position: absolute;
-  top: 80px;
-  left: 30px;
+  top: 100px;
+  left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
   align-items: center;
+  gap: 25px;
 }
 
 .icones-flutuantes img {
   width: 36px;
-  height: auto;
+  height: 36px;
   cursor: pointer;
 }
 
-.icones-flutuantes img:last-child {
+.icones-flutuantes .contato {
   margin-top: auto;
   position: absolute;
   bottom: 20px;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
-}
-
-.modal-content {
-  background-color: white;
-  padding: 20px 30px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-width: 300px;
-}
-
-.modal-content input {
-  padding: 8px 10px;
-  font-size: 14px;
-}
-
-.btn-voltar {
-  align-self: flex-start;
-  font-size: 14px;
-  margin-bottom: 10px;
-  background: transparent;
-  border: none;
-  color: #333;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.mensagem {
-  color: green;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
+/* CARD */
 .sorteio-card {
   max-width: 800px;
-  margin: 140px auto 40px;
+  margin: 140px auto;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.4);
   border: 3px solid #00ff00;
@@ -187,4 +153,9 @@ body, html {
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.grande {
+  padding: 12px 24px;
+  font-size: 18px;
 }
