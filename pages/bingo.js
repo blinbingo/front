@@ -27,7 +27,7 @@ export default function Bingo() {
       <div className="icones-flutuantes">
         <img src="/assets/icon-bingo.svg" alt="Bingo" />
         <img src="/assets/icon-carta.svg" alt="Cartas" />
-        <img src="/assets/icon-contato.svg" alt="Contato" />
+        <img src="/assets/icon-contato.svg" alt="Contato" className="contato" />
       </div>
 
       <main className="sorteio-card">
