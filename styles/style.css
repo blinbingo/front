@@ -97,12 +97,21 @@ body {
 .icones-flutuantes {
   position: absolute;
   top: 100px;
-  left: 20px;
+  left: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
+  height: calc(100% - 150px);
+  justify-content: space-between;
 }
+
+.icones-flutuantes img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
 
 .icones-flutuantes img {
   width: 36px;
