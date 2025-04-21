@@ -15,7 +15,7 @@ export default function Bingo() {
   };
 
   return (
-    <div className="background">
+    <div className="bingo-background">
       <header className="topo">
         <img src="/assets/logo.png" alt="Logo" className="logo" />
         <div className="botoes">
